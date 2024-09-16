@@ -40,3 +40,18 @@ console.log(linkedList);
 linkedList.next = linkedList.next.next;
 console.log(linkedList);
 
+
+// TO-DO
+// ------- Output LL contents one by one -------
+
+//Recursion
+
+
+// Iteration
+
+// ------- Output LL contents in reverse -------
+
+//Recursion
+
+
+// Iteration
