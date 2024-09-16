@@ -45,13 +45,42 @@ console.log(linkedList);
 // ------- Output LL contents one by one -------
 
 //Recursion
+function printLinkedListRec (list) {
+    console.log(list.value);
+
+    if (list.next) {
+        printLinkedListRec(list.next);
+    }
+}
+
+printLinkedListRec(linkedList);
 
 
 // Iteration
+function printLinkedListIter (list) {
+    
+    while(list) {
+        console.log(list.value);
+        list = list.next;
+    }
+}
+
+printLinkedListIter(linkedList);
 
 // ------- Output LL contents in reverse -------
 
 //Recursion
+function printReversedLinkedListRec (list) {
 
+    if (list.next) {
+        printReversedLinkedListRec(list.next);
+    }
+
+    console.log(list.value);
+
+}
+
+printReversedLinkedListRec(linkedList);
 
 // Iteration
+// Zee: Tackle this later!
